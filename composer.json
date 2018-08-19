@@ -17,5 +17,12 @@
         "psr-4": {
             "Pawan\\Vimeo\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pawan\\Vimeo\\VimeoServiceProvider"
+            ]
+        }
     }
 }
