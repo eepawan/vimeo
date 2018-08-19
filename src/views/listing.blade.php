@@ -22,9 +22,11 @@
 <body>
 
 <div class="container">
-    <a href="/vimeo/add">Add Video</a>
+    <br>
+    <a href="/vimeo/add" style="font-size: 20px;">Add Video</a>
     <h1>Vimeo Listing</h1>
     <div class="row">
+        @if(count($videos) > 0)
         @foreach ($videos as $video)
             <div class="col-sm-3 listing-grid">
                 <p><img src="{{$video->thumbnail}}" width="250" height="250"></p>
@@ -32,6 +34,11 @@
             </div>
 
         @endforeach
+        @else
+        <div>
+            Not any video found.
+        </div>
+        @endif
     </div>
     {{ $videos->links() }}
 </div>

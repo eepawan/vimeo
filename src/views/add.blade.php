@@ -24,7 +24,7 @@
     @endif
     <form action="{{ route('addvideo') }}" method="post">
         @csrf
-        <input type="text" name="vimeo_url" placeholder="Vimeo Video Url">
+        <input class="form-control input-sm" type="text" name="vimeo_url" placeholder="Vimeo Video Url like (https://vimeo.com/10679287)" maxlength="200">
 
         <input type="submit" value="Submit">
     </form>
