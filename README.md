@@ -10,13 +10,13 @@ to your `composer.json` file:
 ```json
 {
     "require": {
-        "pawan/vimeo": "dev-master"
+        "eepawan/vimeo": "dev-master"
     }
 }
 ```
 OR
 
-``` composer require pawan/vimeo ```
+``` composer require eepawan/vimeo ```
 
 
 And run below command after installing package:
